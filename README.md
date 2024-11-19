@@ -19,7 +19,7 @@ For this assessment, you will modify a Spring application with a Java back end a
 - GitLab method
 > Press the '+' button located near your branch name. In the dropdown list, press the 'New branch' button. This will allow you to create a name for your branch. Once the branch has been named, you can select 'Create Branch' to push the branch to your repository.
 
-- IntelliJ method
+- IntelliJ method  
 > In IntelliJ, Go to the 'Git' button on the top toolbar. Select the new branch option and create a name for the branch. Make sure checkout branch is selected and press create. You can now add a commit message and push the new branch to the local repo.
 
 ## SUPPORT
