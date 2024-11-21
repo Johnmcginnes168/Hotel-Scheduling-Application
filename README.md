@@ -122,6 +122,19 @@ this.welcomeMessageEnglish$ = this.httpClient.get(this.baseURL + '/welcome?lang=
 
 Note: It is not necessary to convert the values of the prices.
 
+-Modified app.component.ts Line 59 with the following code:
+
+this.rooms.forEach(room => {room.priceCAD = room.price; room.priceEUR = room.price})
+
+-Modified app.component.ts Lines 110-111 with the following code:
+
+priceCAD:string;
+priceEUR:string;
+
+-Modified app.component.html Lines 83-84 added the following code:
+
+<strong>Price: CA${{room.priceCAD}}</strong><br>
+<strong>Price: EUR€{{room.priceEUR}}</strong><br>
 
 3.  Display the time for an online live presentation held at the Landon Hotel by doing the following:
 
