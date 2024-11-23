@@ -188,8 +188,6 @@ return new ResponseEntity<String> (announcement, HttpStatus.OK);
 }
 }
 
-
-
 b.  Use the time zone conversion method from part B3a to display a message stating the time in all three times zones in hours and minutes for an online, live presentation held at the Landon Hotel. The times should be displayed as ET, MT, and UTC.
 
 
@@ -210,6 +208,15 @@ this.announcePresentation$ = this.httpClient.get(this.baseURL + '/presentation',
 C.  Explain how you would deploy the Spring application with a Java back end and an Angular front end to cloud services and create a Dockerfile using the attached supporting document "How to Create a Docker Account" by doing the following:
 
 1.  Build the Dockerfile to create a single image that includes all code, including modifications made in parts B1 to B3. Commit and push the final Dockerfile to GitLab.
+
+-Created Dockerfile with the following code:
+
+FROM openJDK:latest
+COPY .target/D387_sample_code-0.0.2-SNAPSHOT.jar /app/D387_sample_code-0.0.2-SNAPSHOT.jar
+WORKDIR /app
+EXPOSE 8080
+CMD ["java", "-jar", "D387_sample_code-0.0.2-SNAPSHOT.jar"]
+
 
 2.  Test the Dockerfile by doing the following:
 
