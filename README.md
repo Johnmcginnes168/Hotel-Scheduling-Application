@@ -211,12 +211,11 @@ C.  Explain how you would deploy the Spring application with a Java back end and
 
 -Created Dockerfile with the following code:
 
-FROM openJDK:latest
-COPY .target/D387_sample_code-0.0.2-SNAPSHOT.jar /app/D387_sample_code-0.0.2-SNAPSHOT.jar
+FROM openjdk:latest
+COPY ./target/D387_sample_code-0.0.2-SNAPSHOT.jar /app/D387_sample_code-0.0.2-SNAPSHOT.jar
 WORKDIR /app
 EXPOSE 8080
 CMD ["java", "-jar", "D387_sample_code-0.0.2-SNAPSHOT.jar"]
-
 
 2.  Test the Dockerfile by doing the following:
 
